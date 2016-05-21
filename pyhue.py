@@ -50,8 +50,7 @@ class Bridge(object):
 
     def __get_api_objects(self, cls):
         result = self._request('GET', [cls.ROUTE])
-        if(result['error']):
-            raise HueException(result['error']['description'])
+        
         objects = [cls(self, i) for i in result.keys()]
         return sorted(objects, key=lambda x: x.id)
 
