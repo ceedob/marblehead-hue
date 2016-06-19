@@ -3,7 +3,8 @@
 
 import pyhue, sys, random, time
 
-bridge = pyhue.Bridge('192.168.1.32', 'J4wVejuDoOvrW4TlOdGgv-2mrNVokM-0KwGtyaRm')
+#bridge = pyhue.Bridge('192.168.1.32', 'J4wVejuDoOvrW4TlOdGgv-2mrNVokM-0KwGtyaRm')
+bridge = pyhue.Bridge('192.168.1.82', 'JaiTE2tcfSTd2l7A3FKvn1O8sskGYlbxf9fr5dRi')
 
 def setLightHue(light, hue):
     light.on = True
@@ -27,7 +28,7 @@ while True:
                colour = random.randint(0, 65535)
                setLightHue(light,colour)
                print("Set "+str(colour))
-               time.sleep(2/bpm)
+               time.sleep(1/bpm)
 
     elif command == "exit":
         sys.exit()
