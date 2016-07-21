@@ -3,7 +3,7 @@
 
 import pyhue, sys, random, time
 
-#bridge = pyhue.Bridge('192.168.1.32', 'J4wVejuDoOvrW4TlOdGgv-2mrNVokM-0KwGtyaRm')
+# bridge = pyhue.Bridge('192.168.1.11', 'J4wVejuDoOvrW4TlOdGgv-2mrNVokM-0KwGtyaRm')
 bridge = pyhue.Bridge('192.168.1.82', 'JaiTE2tcfSTd2l7A3FKvn1O8sskGYlbxf9fr5dRi')
 
 def setLightHue(light, hue):
